@@ -1,8 +1,8 @@
 <?php
-    $servername = "localhost";
-    $database = "projeto";
-    $username = "root";
-    $password = "";
+     $nome do servidor= "host local";
+    $banco de dados = "projeto";
+    $nome de usuario = "raiz";
+    $senha= "";
 
 
     $conn = mysqli_connect($servername, $username, $password, $database);
