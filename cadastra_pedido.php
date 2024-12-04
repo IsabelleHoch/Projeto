@@ -1,21 +1,21 @@
 <?php
-    require("conecta.php");
+    requerer("conecta.php");
 
-    $nome = $_POST['nome'];
-    $sobrenome =  $_POST['sobrenome'];
-    $email = $_POST['email'];
-    $escolha = $_POST['escolha'];
-    $equipamento = $_POST['equipamento'];
-    $pagamento = $_POST['pagamento'];
-    $observacoes = $_POST['observacoes'];
+    $nome = $_PUBLICAR['nome'];
+    $sobrenome =  $_PUBLICAR['sobrenome'];
+    $email = $_PUBLICAR['email'];
+    $escolha = $_PUBLICAR['escolha'];
+    $equipamento = $_PUBLICAR['equipamento'];
+    $pagamento = $_PUBLICAR['pagamento'];
+    $observacoes = $_PUBLICAR['observacoes'];
 
     $sql = "INSERT INTO pedido (nome, sobrenome, email, escolha, equipamento, pagamento, observacoes)
     VALUES ('$nome', '$sobrenome', '$email', '$escolha', '$equipamento', '$pagamento', '$observacoes')";
 
-    if ($conn->query($sql) === TRUE) {
-      echo "<center><h1>Registro Inserido com Sucesso</h1>";
-      echo "<a href='index.html'><input type='button' value='Voltar'></a></center>";
-    } else {
-      echo "<h3>OCORREU UM ERRO: </h3>: " . $sql . "<br>" . $conn->error;
-    }
+se($conexao->consulta($SQL- >) ===verdadeiro){
+  eco "<center><h>Registro inserido com sucesso</h>";
+  eco "<a href= 'index.html' type='button' value= 'Voltar'></a></center>";
+}outro{
+  eco "<h3>OCORREU UM ERRO:<".$SQL->."<br>".$conexao->erro;
+?>
 ?>
