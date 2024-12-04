@@ -5,9 +5,9 @@
     $senha= "";
 
 
-    $conn = mysqli_connect($servername, $username, $password, $database);
+    $conn = mysqli_connect($nome do servidor, $nome de usuario, $senha, $banco de dados);
 
     if (!$conn) {
-        die("Conexão falhou. Erro: " . mysqli_connect_error());
+        die("Conexão falhou. Erro: " . erro_de_conexao_mysqli());
     }
 ?>
